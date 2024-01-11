@@ -17,7 +17,7 @@ const getWordInfo = async (word) => {
     let definitions = data[0].meanings[0].definitions[0];
 
     result.innerHTML = `
-    <h2><string>Word:</strong> ${data[0].word}</h2>
+    <h2><strong>Word:</strong> ${data[0].word}</h2>
     <p class="partOfSpeech">${data[0].meanings[0].partOfSpeech}</p>
     <p><strong>Meanings:</strong>${
       definitions.definition === undefined
